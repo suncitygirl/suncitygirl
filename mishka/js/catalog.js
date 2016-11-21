@@ -1,0 +1,1 @@
+function showMobileMenu(e){e.preventDefault();var n=document.getElementsByClassName("main-nav__dropdown-list")[0];openMenu.classList.toggle("main-nav__close-btn"),n.classList.toggle("main-nav__dropdown-list--show")}var openMenu=document.getElementsByClassName("main-nav__open-btn")[0];openMenu.addEventListener("click",showMobileMenu);
