@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="google" content="notranslate">
     <title>Iuliia G. | Front End Web Developer</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two:700" rel="stylesheet">
@@ -23,7 +26,6 @@
             </symbol>
             <symbol id="icon-css3" viewBox="0 0 23 32">
                 <title>css3</title>
-                <path class="path1" fill="#fff" d="M17.745 1.185h-1.882l1.959 2.123v1.011h-4.032v-1.184h1.956l-1.956-2.123v-1.012h3.955v1.185zM12.989 1.185h-1.88l1.956 2.123v1.011h-4.030v-1.184h1.956l-1.959-2.123v-1.012h3.955v1.185zM8.283 1.233h-2.031v1.852h2.031v1.235h-3.474v-4.32h3.474v1.233z"></path>
                 <path class="path2" fill="#1572b6" d="M2.043 29.43l-2.063-23.138h22.67l-2.065 23.135-9.283 2.576z"></path>
                 <path class="path3" fill="#33a9dc" d="M11.315 30.032l7.501-2.079 1.765-19.771h-9.264z"></path>
                 <path class="path4" fill="#fff" d="M11.315 16.566h3.755l0.259-2.906h-4.014v-2.837h7.116l-0.069 0.761-0.697 7.821h-6.351z"></path>
@@ -41,7 +43,6 @@
                 <path class="path1" fill="#e44f26" d="M2.042 29.43l-2.063-23.142h22.671l-2.066 23.138-9.283 2.574z"></path>
                 <path class="path2" fill="#f1662a" d="M11.314 30.033l7.502-2.081 1.765-19.771h-9.265z"></path>
                 <path class="path3" fill="#ebebeb" d="M11.314 16.763h-3.755l-0.259-2.906h4.014v-2.835h-7.116l0.069 0.762 0.697 7.82h6.349zM11.314 24.133l-0.012 0.005-3.161-0.854-0.204-2.264h-2.847l0.396 4.456 5.815 1.614 0.012-0.004z"></path>
-                <path class="path4" fill="#fff" d="M2.089 0h1.442v1.425h1.319v-1.425h1.444v4.315h-1.444v-1.445h-1.319v1.445h-1.442v-4.315zM8.189 1.431h-1.27v-1.431h3.982v1.431h-1.268v2.885h-1.442v-2.884zM11.533 0h1.505l0.925 1.517 0.925-1.517h1.505v4.315h-1.436v-2.139l-0.993 1.535h-0.024l-0.993-1.536v2.138h-1.412v-4.314zM17.109 0h1.443v2.889h2.027v1.427h-3.472v-4.315z"></path>
                 <path class="path5" fill="#fff" d="M11.305 16.763v2.838h3.495l-0.329 3.681-3.165 0.854v2.953l5.818-1.613 0.043-0.48 0.667-7.472 0.069-0.762h-0.764zM11.305 11.019v2.838h6.855l0.057-0.636 0.13-1.438 0.066-0.762z"></path>
             </symbol>
             <symbol id="icon-js" viewBox="0 0 32 32">
@@ -100,11 +101,58 @@
                     <h3 class="project__text-title">Project brief</h3>
                     <p class="project__text">Static website. It is a kind of CSS3 parallax background demo with 3D transformation; JavaScript smooth scrolling.</p>
                 </div>
-                <div class="project__tools"></div>
-                <a href="lambda/index.html" class="project__btn">View</a href="#">
+                <div class="project__tools">
+                  <svg class="project__tool-icon project__tool-icon--html5">
+                      <use xlink:href="#icon-html5"></use>
+                  </svg>
+                  <svg class="project__tool-icon project__tool-icon--css3">
+                      <use xlink:href="#icon-css3"></use>
+                  </svg>
+                  <svg class="project__tool-icon project__tool-icon--sass">
+                      <use xlink:href="#icon-sass"></use>
+                  </svg>
+                  <svg class="project__tool-icon project__tool-icon--gulp">
+                      <use xlink:href="#icon-gulp"></use>
+                  </svg>
+                  <svg class="project__tool-icon project__tool-icon--bem">
+                      <use xlink:href="#icon-bem"></use>
+                  </svg>
+                </div>
+                <a href="lambda/index.html" class="project__btn">View</a>
             </div>
             <div class="project__pic">
-              <img src="img/lambda.png" alt="A picture of the project">
+                <img src="img/lambda.png" alt="A picture of the project">
+            </div>
+        </article>
+
+        <article class="project">
+            <div class="project__info">
+                <h2 class="project__title">Rosinka</h2>
+                <div class="project__brief">
+                    <h3 class="project__text-title">Project brief</h3>
+                    <p class="project__text">Adaptive. Vanilla Javascript carousel, smooth scrolling.</p>
+                </div>
+                <div class="project__tools">
+                  <svg class="project__tool-icon project__tool-icon--html5">
+                      <use xlink:href="#icon-html5"></use>
+                  </svg>
+                  <svg class="project__tool-icon project__tool-icon--css3">
+                      <use xlink:href="#icon-css3"></use>
+                  </svg>
+                  <svg class="project__tool-icon project__tool-icon--sass">
+                      <use xlink:href="#icon-sass"></use>
+                  </svg>
+                  <svg class="project__tool-icon project__tool-icon--gulp">
+                      <use xlink:href="#icon-gulp"></use>
+                  </svg>
+                  <svg class="project__tool-icon project__tool-icon--bem">
+                      <use xlink:href="#icon-bem"></use>
+                  </svg>
+                </div>
+                <a href="rosinka/index.html" class="project__btn">View</a>
+            </div>
+            <div class="project__pic">
+                <img src="img/rosinka.png" alt="A picture of the project">
             </div>
         </article>
 
@@ -113,14 +161,29 @@
                 <h2 class="project__title">Mishka</h2>
                 <div class="project__brief">
                     <h3 class="project__text-title">Project brief</h3>
-                    <p class="project__text">Responsive website. It has three pages: index, catalog and order page.
-                    There is a CSS3 carousel, written without any JavaScript/jQuery. Form validation.</p>
+                    <p class="project__text">Responsive website. It has three pages: index, catalog and order page. There is a CSS3 carousel, written without any JavaScript/jQuery. Form validation.</p>
                 </div>
-                <div class="project__tools"></div>
-                <a href="mishka/index.html" class="project__btn">View</a href="#">
+                <div class="project__tools">
+                  <svg class="project__tool-icon project__tool-icon--html5">
+                      <use xlink:href="#icon-html5"></use>
+                  </svg>
+                  <svg class="project__tool-icon project__tool-icon--css3">
+                      <use xlink:href="#icon-css3"></use>
+                  </svg>
+                  <svg class="project__tool-icon project__tool-icon--sass">
+                      <use xlink:href="#icon-sass"></use>
+                  </svg>
+                  <svg class="project__tool-icon project__tool-icon--gulp">
+                      <use xlink:href="#icon-gulp"></use>
+                  </svg>
+                  <svg class="project__tool-icon project__tool-icon--bem">
+                      <use xlink:href="#icon-bem"></use>
+                  </svg>
+                </div>
+                <a href="mishka/index.html" class="project__btn">View</a>
             </div>
             <div class="project__pic">
-              <img src="img/mishka.png" alt="A picture of the project">
+                <img src="img/mishka.png" alt="A picture of the project">
             </div>
         </article>
 
@@ -131,41 +194,80 @@
                     <h3 class="project__text-title">Project brief</h3>
                     <p class="project__text">Responsive website, CSS3 carousel.</p>
                 </div>
-                <div class="project__tools"></div>
-                <a href="pink/index.html" class="project__btn">View</a href="#">
+                <div class="project__tools">
+                  <svg class="project__tool-icon project__tool-icon--html5">
+                      <use xlink:href="#icon-html5"></use>
+                  </svg>
+                  <svg class="project__tool-icon project__tool-icon--css3">
+                      <use xlink:href="#icon-css3"></use>
+                  </svg>
+                  <svg class="project__tool-icon project__tool-icon--sass">
+                      <use xlink:href="#icon-sass"></use>
+                  </svg>
+                  <svg class="project__tool-icon project__tool-icon--gulp">
+                      <use xlink:href="#icon-gulp"></use>
+                  </svg>
+                  <svg class="project__tool-icon project__tool-icon--bem">
+                      <use xlink:href="#icon-bem"></use>
+                  </svg>
+                </div>
+                <a href="pink/index.html" class="project__btn">View</a>
             </div>
             <div class="project__pic">
-              <img src="img/pink.png" alt="A picture of the project">
+                <img src="img/pink.png" alt="A picture of the project">
             </div>
         </article>
 
-        <article class="project">
-            <div class="project__info">
+        <article class="project project--tiny">
+            <h2 class="project__title--main">SEE ALSO</h2>
+            <div class="project__info project__info--tiny">
+                  <h2 class="project__title">Simon Game</h2>
+                  <div class="project__brief">
+                      <h3 class="project__text-title project__text-title--tiny">Project brief</h3>
+                      <p class="project__text project__text--tiny">Tiny JavaScript-based memory game. I used HTML tranform to make round-shaped blocks and Vanilla JS for interactivity.</p>
+                      <p class="project__text project__text--short" hidden>Tiny JavaScript-based memory game.</p>
+                  </div>
+                  <div class="project__tools project__tools--tiny">
+                    <svg class="project__tool-icon project__tool-icon--html5">
+                        <use xlink:href="#icon-html5"></use>
+                    </svg>
+                    <svg class="project__tool-icon project__tool-icon--css3">
+                        <use xlink:href="#icon-css3"></use>
+                    </svg>
+                    <svg class="project__tool-icon project__tool-icon--js">
+                        <use xlink:href="#icon-js"></use>
+                    </svg>
+                    <svg class="project__tool-icon project__tool-icon--gulp">
+                        <use xlink:href="#icon-gulp"></use>
+                    </svg>
+                  </div>
+                  <a href="simongame/main.html" class="project__btn">View</a>
+            </div>
+            <div class="project__info project__info--tiny">
                 <h2 class="project__title">Drag-n-Drop Demo</h2>
                 <div class="project__brief">
-                    <h3 class="project__text-title">Project brief</h3>
-                    <p class="project__text">Vanilla JS implimentation of Drag'n'Drop using mouse events. You can add days and tasks. Tasks are draggable and can be chained one to another. Everything is sorted.</p>
+                    <h3 class="project__text-title project__text-title--tiny">Project brief</h3>
+                    <p class="project__text project__text--tiny">Vanilla JS implimentation of Drag'n'Drop using mouse events. You can add days and tasks. Tasks are draggable and can be chained one after another. Everything is sorted.</p>
+                    <p class="project__text project__text--short" hidden>Vanilla JS implimentation of Drag'n'Drop.</p>
                 </div>
-                <div class="project__tools"></div>
-                <a href="dragndrop/index.html" class="project__btn">View</a href="#">
-            </div>
-            <div class="project__pic">
-              <img src="img/todo.png" alt="A picture of the project">
-            </div>
-        </article>
-
-        <article class="project">
-            <div class="project__info">
-                <h2 class="project__title">Simon Game</h2>
-                <div class="project__brief">
-                    <h3 class="project__text-title">Project brief</h3>
-                    <p class="project__text">Tiny JavaScript-based memory game. I used HTML tranform to make round-shaped blocks and Vanilla JS for interactivity.</p>
+                <div class="project__tools project__tools--tiny">
+                  <svg class="project__tool-icon project__tool-icon--js">
+                      <use xlink:href="#icon-js"></use>
+                  </svg>
+                  <svg class="project__tool-icon project__tool-icon--webpack">
+                      <use xlink:href="#icon-webpack"></use>
+                  </svg>
+                  <svg class="project__tool-icon project__tool-icon--gulp">
+                      <use xlink:href="#icon-gulp"></use>
+                  </svg>
+                  <svg class="project__tool-icon project__tool-icon--babel">
+                      <use xlink:href="#icon-babel"></use>
+                  </svg>
                 </div>
-                <div class="project__tools"></div>
-                <a href="simongame/main.html" class="project__btn">View</a href="#">
-            </div>
-            <div class="project__pic">
-              <img src="img/simon.png" alt="A picture of the project">
+                <div class="project__btns">
+                  <a href="dragndrop/index.html" class="project__btn project__btn--tiny">View</a>
+                  <a href="https://github.com/suncitygirl/drag-n-drop/tree/master/src" class="project__btn project__btn--tiny">Code</a>
+                </div>
             </div>
         </article>
     </section>
