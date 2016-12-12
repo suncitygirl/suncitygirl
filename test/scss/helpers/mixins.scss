@@ -1,0 +1,8 @@
+@mixin container {
+  padding-left: 5%;
+  padding-right: 5%;
+  @media (min-width: 1799px) {
+    padding-left: 13%;
+    padding-right: 13%;
+  }
+}

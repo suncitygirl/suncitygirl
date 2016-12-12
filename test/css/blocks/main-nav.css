@@ -1,0 +1,38 @@
+.main-nav {
+  display: inline-block;
+  font-size: 0;
+  float: right;
+  font-size: 1.6rem;
+  vertical-align: top;
+  width: 20%; }
+
+.main-nav__list {
+  margin-top: 3vh; }
+
+.main-nav__item {
+  display: inline-block;
+  text-align: center;
+  width: 47%;
+  height: 100%;
+  text-align: right;
+  vertical-align: middle; }
+
+.main-nav__link {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  font-size: 1.4rem;
+  transition: color 0.2s; }
+
+.main-nav__link--iconed {
+  height: 50px;
+  width: auto;
+  transition: fill 0.2s; }
+
+.main-nav__link--iconed:hover {
+  fill: #B71C1C; }
+
+.main-nav__link:hover {
+  color: #B71C1C; }
+
+/*# sourceMappingURL=../maps/blocks/main-nav.css.map */

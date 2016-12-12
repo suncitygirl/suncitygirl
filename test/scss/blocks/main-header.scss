@@ -1,0 +1,11 @@
+@import "../helpers/mixins";
+@import "main-nav";
+@import "logo";
+.main-header {
+  position: absolute;
+    min-height: 20vh;
+    font-size: 0;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    @include container;
+}

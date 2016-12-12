@@ -1,0 +1,188 @@
+@import "normalize";
+@import "helpers/variables";
+@import "blocks/main-header";
+@import "blocks/intro";
+@import "blocks/project";
+html {
+    font-size: $html-font-size;
+    min-width: 640px;
+}
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: $font-family-logo--sub;
+    line-height: $line-height;
+}
+body {
+    font-size: $font-size;
+}
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+    color: $black;
+}
+* {
+    box-sizing: border-box;
+}
+li,
+ul {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.delimiter {
+  height: 10vh;
+    &--0 {
+      background-size:cover;
+      background:
+      repeating-linear-gradient(
+        to top left,
+        transparent,
+        transparent 15em,
+        lighten(#f6edb2, 5%) 15em,
+        lighten(#f6edb2, 5%) 30em,
+        transparent 30em,
+        transparent 45em,
+        lighten(#cfecd0, 5%) 45em,
+        lighten(#cfecd0, 5%) 60em
+      ),
+      repeating-linear-gradient(
+        to top right,
+        transparent,
+        transparent 15em,
+        #FFEBEE 15em,
+        #FFEBEE 30em,
+        transparent 30em,
+        transparent 45em,
+        #ececec 45em,
+        #ececec 60em
+      ), white;
+
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+
+    }
+    &--1 {
+      background-size: cover;
+      background:
+      repeating-linear-gradient(
+        to top left,
+        transparent,
+        transparent 15em,
+        lighten(#b9deed, 5%) 15em,
+        lighten(#b9deed, 5%) 30em,
+        transparent 30em,
+        transparent 45em,
+        lighten(#ffc5ca, 5%) 45em,
+        lighten(#ffc5ca, 5%) 60em
+      ),
+      repeating-linear-gradient(
+        to top right,
+        transparent,
+        transparent 15em,
+        #FFEBEE 15em,
+        #FFEBEE 30em,
+        transparent 30em,
+        transparent 45em,
+        #ececec 45em,
+        #ececec 60em
+      ), white;
+
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+
+    }
+    &--2 {
+      background-size: cover;
+      background:
+      repeating-linear-gradient(
+        to top left,
+        transparent,
+        transparent 15em,
+        lighten(#d3ffe8, 5%) 15em,
+        lighten(#d3ffe8, 5%) 30em,
+        transparent 30em,
+        transparent 45em,
+        lighten(#B2DFDB, 5%) 45em,
+        lighten(#B2DFDB, 5%) 60em
+      ),
+      repeating-linear-gradient(
+        to top right,
+        transparent,
+        transparent 15em,
+        #FFEBEE 15em,
+        #FFEBEE 30em,
+        transparent 30em,
+        transparent 45em,
+        #ececec 45em,
+        #ececec 60em
+      ), white;
+
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+
+    }
+    &--3 {
+      background-size: cover;
+      background:
+      repeating-linear-gradient(
+        to top left,
+        transparent,
+        transparent 15em,
+        lighten(#283593, 55%) 15em,
+        lighten(#283593, 55%) 30em,
+        transparent 30em,
+        transparent 45em,
+        lighten(#f1a4b5, 15%) 45em,
+        lighten(#f1a4b5, 15%) 60em
+      ),
+      repeating-linear-gradient(
+        to top right,
+        transparent,
+        transparent 15em,
+        #FFEBEE 15em,
+        #FFEBEE 30em,
+        transparent 30em,
+        transparent 45em,
+        #ececec 45em,
+        #ececec 60em
+      ), white;
+      background-blend-mode: multiply;
+      background-attachment: fixed;
+    }
+      &--4 {
+        background-size: cover;
+        background:
+        repeating-linear-gradient(
+          to top left,
+          transparent,
+          transparent 15em,
+          lighten(#FFF9C4, 5%) 15em,
+          lighten(#FFF9C4, 5%) 30em,
+          transparent 30em,
+          transparent 45em,
+          lighten(#f1a4b5, 15%) 45em,
+          lighten(#f1a4b5, 15%) 60em
+        ),
+        repeating-linear-gradient(
+          to top right,
+          transparent,
+          transparent 15em,
+          lighten(#CCFF90, 15%) 15em,
+          lighten(#CCFF90, 15%) 30em,
+          transparent 30em,
+          transparent 45em,
+          #ececec 45em,
+          #ececec 60em
+        ), white;
+        background-blend-mode: multiply;
+        background-attachment: fixed;
+    }
+}

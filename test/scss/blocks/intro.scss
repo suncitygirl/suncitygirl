@@ -1,0 +1,82 @@
+@import "../helpers/variables";
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: $font-family-logo--sub;
+  font-size: $font-size--lg;
+  line-height: 1.7;
+  min-height: 600px;
+//   background:
+// 	repeating-linear-gradient(
+// 		to top left,
+// 		transparent,
+// 		transparent 5em,
+// 		lighten(#E57373, 5%) 5em,
+// 		lighten(#E57373, 5%) 10em,
+// 		transparent 10em,
+// 		transparent 15em,
+// 		lighten(#EF9A9A, 5%) 15em,
+// 		lighten(#EF9A9A, 5%) 20em
+// 	),
+// 	repeating-linear-gradient(
+// 		to top right,
+// 		transparent,
+// 		transparent 5em,
+// 		#FFEBEE 5em,
+// 		#FFEBEE 10em,
+// 		transparent 10em,
+// 		transparent 15em,
+// 		#ececec 15em,
+// 		#ececec 20em
+// 	), lighten(#EF5350, 20%);
+//
+// background-blend-mode: multiply;
+// background:
+// 	linear-gradient(
+// 		#FFCA28,
+// 		transparent
+// 	),
+// 	linear-gradient(
+// 		90deg,
+// 		#E57373,
+// 		transparent
+// 	),
+// 	linear-gradient(
+// 		-90deg,
+// 		#00E5FF,
+// 		transparent
+// 	);
+//
+// background-blend-mode: screen;
+
+  @media (max-width: 1000px) {
+    font-size: $font-size--bg;
+    min-height: 900px;
+  }
+  &__text {
+    display: block;
+    width: 60%;
+    // margin-top: -20vh;
+    text-align: center;
+    @media (max-width: 1000px) {
+      width: 80%;
+    }
+    &--small {
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+      font-size: $font-size--md;
+      @media (max-width: 1000px) {
+        margin-top: 2vh;
+      }
+    }
+  }
+  &__greeting {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
