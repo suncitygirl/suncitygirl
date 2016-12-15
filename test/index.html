@@ -7,9 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="google" content="notranslate">
     <title>Iuliia G. | Front End Web Developer</title>
-    <!--build:css css/style.min.css-->
-    <link rel="stylesheet" href="css/style.css">
-    <!--endbuild-->
+    <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,500" rel="stylesheet">
 </head>
@@ -94,10 +92,11 @@
         <p class="intro__text">
             <span class="intro__greeting">Hi there!</span> My name is Iuliia and I get joy from being a part of the amazing Front-end community. <span class="intro__text--small">Here you can take a look at my portfolio. Feel free to contact me.</span>
         </p>
+        <button type="button" class="intro__arrow" data-scroll="project--first"></button>
     </section>
     <section class="portfolio">
-      <div class="delimiter delimiter--0"></div>
-        <article class="project">
+        <div class="delimiter delimiter--0"></div>
+        <article class="project project--first">
             <div class="project__info">
                 <h2 class="project__title">Lambda</h2>
                 <div class="project__brief">
@@ -109,7 +108,7 @@
                       <use xlink:href="#icon-html5"></use>
                   </svg>
                   <svg class="project__tool-icon project__tool-icon--css3">
-                      <use xlink:href="#icon-css3"></use>
+                      <use xlink:href="#icon-css3" class="use--css3"></use>
                   </svg>
                   <svg class="project__tool-icon project__tool-icon--sass">
                       <use xlink:href="#icon-sass"></use>
@@ -274,6 +273,7 @@
             </div>
         </article>
     </section>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
