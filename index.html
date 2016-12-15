@@ -77,9 +77,10 @@
             <ul class="main-nav__list">
                 <li class="main-nav__item">
                     <a class="main-nav__link" href="https://github.com/suncitygirl">
-                        <svg class="main-nav__link--iconed">
+                        <svg class="main-nav__link-icon">
                             <use xlink:href="#icon-github"></use>
                         </svg>
+                        <span class="main-nav__link-icon-text" hidden>GitHub</span>
                     </a>
                 </li>
                 <li class="main-nav__item main-nav__item--email">
@@ -94,6 +95,7 @@
         </p>
     </section>
     <section class="portfolio">
+        <div class="delimiter delimiter--0"></div>
         <article class="project">
             <div class="project__info">
                 <h2 class="project__title">Lambda</h2>
@@ -106,7 +108,7 @@
                       <use xlink:href="#icon-html5"></use>
                   </svg>
                   <svg class="project__tool-icon project__tool-icon--css3">
-                      <use xlink:href="#icon-css3"></use>
+                      <use xlink:href="#icon-css3" class="use--css3"></use>
                   </svg>
                   <svg class="project__tool-icon project__tool-icon--sass">
                       <use xlink:href="#icon-sass"></use>
@@ -121,10 +123,10 @@
                 <a href="lambda/index.html" class="project__btn">View</a>
             </div>
             <div class="project__pic">
-                <img src="img/lambda.png" alt="A picture of the project">
+                <img class="project__pic--one-screen" src="img/lambda.png" alt="A picture of the project">
             </div>
         </article>
-
+        <div class="delimiter delimiter--1"></div>
         <article class="project">
             <div class="project__info">
                 <h2 class="project__title">Rosinka</h2>
@@ -155,7 +157,7 @@
                 <img src="img/rosinka.png" alt="A picture of the project">
             </div>
         </article>
-
+        <div class="delimiter delimiter--2"></div>
         <article class="project">
             <div class="project__info">
                 <h2 class="project__title">Mishka</h2>
@@ -186,7 +188,7 @@
                 <img src="img/mishka.png" alt="A picture of the project">
             </div>
         </article>
-
+        <div class="delimiter delimiter--3"></div>
         <article class="project">
             <div class="project__info">
                 <h2 class="project__title">Pink</h2>
@@ -217,7 +219,7 @@
                 <img src="img/pink.png" alt="A picture of the project">
             </div>
         </article>
-
+        <div class="delimiter delimiter--4"></div>
         <article class="project project--tiny">
             <h2 class="project__title--main">SEE ALSO</h2>
             <div class="project__info project__info--tiny">
@@ -244,7 +246,7 @@
                   <a href="simongame/main.html" class="project__btn">View</a>
             </div>
             <div class="project__info project__info--tiny">
-                <h2 class="project__title">Drag-n-Drop Demo</h2>
+                <h2 class="project__title project__title--tiny">Drag-n-Drop Demo</h2>
                 <div class="project__brief">
                     <h3 class="project__text-title project__text-title--tiny">Project brief</h3>
                     <p class="project__text project__text--tiny">Vanilla JS implimentation of Drag'n'Drop using mouse events. You can add days and tasks. Tasks are draggable and can be chained one after another. Everything is sorted.</p>
@@ -271,6 +273,8 @@
             </div>
         </article>
     </section>
+    <!-- <script src="js/smoothscroll.js" defer></script> -->
+    <!-- <script src="js/scroll.js" defer></script> -->
 </body>
 
 </html>
