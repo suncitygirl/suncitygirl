@@ -1,0 +1,167 @@
+@import "burger";
+@import "main-nav";
+.main-header {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 13px 15px/$mobile-width * 100%;
+    color: $black;
+    background-color: $white;
+    @include tablet-portrait {
+        flex-wrap: nowrap;
+        padding: 13px 20px/$tablet-width * 100% 13px 30px/$tablet-width * 100%;
+    };
+    @include desktop {
+      padding: 14px 20px/$desktop-width * 100% 10px 39px/$desktop-width * 100%;
+    };
+    &__open-menu-icon {
+        position: relative;
+        display: block;
+        flex-basis: 22px/($mobile-width - 30px) * 100%;
+        align-self: center;
+        margin-right: 21px/$mobile-width * 100%;
+        height: 20px;
+        @include tablet-portrait {
+            order: 0;
+            flex-basis: 24px;
+            margin-right: 45px/$tablet-width * 100%;
+        };
+    }
+    &__logo {
+        flex-basis: 80px/($mobile-width - 30px) * 100%;
+        max-width: 126px;
+        align-self: center;
+        height: 100%;
+        min-width: 77px;
+        @include tablet-portrait {
+            order: 1;
+            flex-basis: 116px/($mobile-width - 60px) * 100%;
+            margin-right: 15px/$tablet-width * 100%;
+        };
+        @include desktop {
+          margin-right: 4%;
+        };
+    }
+    &__side-list {
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        flex-basis: 150px/($mobile-width - 30px) * 100%;
+        align-items: stretch;
+        margin-left: auto;
+        @include tablet-portrait {
+            order: 3;
+            flex-basis: 260px/($tablet-width - 60px) * 100%;
+        }
+        @include tablet {
+            flex-basis: 190px/($tablet-width - 60px) * 100%;
+        };
+        @include desktop {
+            flex-basis: 200px/($desktop-width - 50px) * 100%;
+        };
+    }
+    &__nav {
+        order: 5;
+        flex-basis: 100%;
+        margin-top: 13px;
+        @include tablet-portrait {
+            order: 2;
+            flex-basis: 210px/($tablet-width - 60)* 100%;
+            margin-top: 2px;
+        };
+        @include tablet {
+            flex-basis: 166px/($tablet-width - 60)* 100%;
+        };
+        @include desktop {
+            flex-basis: 170px/($desktop-width - 50px) * 100%;
+        };
+    }
+    &__item {
+        flex-basis: 33%;
+        &:not(:first-child) {
+            border-left: solid 1px;
+        }
+        @include tablet {
+            &:last-child {
+                border-right: solid 1px;
+            }
+        };
+    }
+    &__link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        &--search {
+            display: block;
+            text-align: center;
+            height: 100%;
+            width: 100%;
+        }
+        &--g-logo {
+            height: 28px;
+            display: block;
+            text-align: center;
+            @include tablet-portrait {
+                height: 36px;
+            };
+        }
+        &--lang-btn {
+            display: block;
+            margin-right: 10%;
+            font-size: $font-size--md;
+            text-align: center;
+        }
+    }
+    &__lang {
+        position: relative;
+        top: 6px;
+        @include tablet-portrait {
+          top: 9px;
+          &:hover {
+            color: lighten(#000, 55%);
+          }
+          &:active {
+            font-weight: normal;
+            color: $black;
+          }
+        };
+    }
+    &__search-icon {
+        position: relative;
+        top: 5px;
+        @include tablet-portrait {
+          top: 8px;
+        };
+    }
+    &__social {
+        @include tablet {
+            display: flex;
+            order: 6;
+            flex-basis: 130px/($tablet-width - 60px) * 100%;
+        };
+        @include desktop {
+            flex-basis: 150px/($desktop-width - 60px) * 100%;
+        };
+    }
+    &__social-icon--vk {
+      margin-left: -10px;
+    }
+}
+.social-list {
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        max-height: 30px;
+        align-self: center;
+        & a {
+            display: block;
+            height: 100%;
+        }
+    }
+    @include desktop {
+      flex-basis: 120px/($desktop-width - 50px) * 100%;
+    };
+}

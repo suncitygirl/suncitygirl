@@ -1,0 +1,32 @@
+@import "normalize";
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "common-elements";
+@import "blocks/icons";
+@import "blocks/btn";
+@import "blocks/main-header";
+@import "blocks/intro";
+@import "blocks/about";
+@import "blocks/main-footer";
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family-main;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+}
+html {
+  font-size: $html-font-size;
+  overflow-x: hidden;
+}
+body {
+  font-size: $font-size;
+  line-height: $line-height;
+  width: 100%;
+  overflow-x: hidden;
+}

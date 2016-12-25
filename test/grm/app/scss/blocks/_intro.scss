@@ -1,0 +1,16 @@
+@import "carousel";
+@import "menu";
+
+.intro {
+  position: relative;
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 50%;
+  //   width: 50px;
+  //   height: 50px;
+  //   background: url("../../img/arrow-down.png") no-repeat center;
+  //   cursor: pointer;
+  // }
+}

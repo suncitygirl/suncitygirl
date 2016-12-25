@@ -1,0 +1,179 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid #6b6b6b 2px;
+  padding: 10px 15px/$mobile-width * 100% 30px 15px/$mobile-width * 100%;
+  @include tablet-portrait {
+    min-height: calc(100vh - 74px);
+    padding: 0 30px/$tablet-width * 100% 58px 30px/$tablet-width * 100%;
+  };
+  @include desktop {
+    min-height: calc(100vh - 74px);
+    padding: 0 110px/$desktop-width * 100% 58px 110px/$desktop-width * 100%;
+  };
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 20px 0 8px 0;
+    width: 100%;
+    @include tablet-portrait {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      padding: 46px 0 15px 0;
+    };
+  }
+  &__header-link {
+    display: block;
+    vertical-align: top;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+    &:nth-child(2) {
+      margin: 5px 0 25px 0;
+    }
+    &:last-child {
+      display: none;
+    }
+    &:first-child {
+      margin-top: -20px;
+    }
+    @include tablet-portrait {
+      transition: transform 0.5s;
+      &:last-child {
+        display: block;
+      }
+      &:hover {
+        transform: scale(1.05);
+      }
+    };
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @include tablet-portrait {
+      align-content: stretch;
+    };
+  }
+  &__title {
+    flex-basis: 100%;
+    margin: 0;
+    padding: 40px 0;
+    font-weight: lighter;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 100%;
+    @include tablet-portrait {
+      flex-basis: 50% - 12px/$tablet-width * 100%;
+    };
+    @include desktop {
+      flex-basis: 50% - 21px/$desktop-width * 100%;
+    }
+    &--left-column {
+      @include tablet-portrait {
+        margin-right: 24px/$tablet-width * 100%;
+      };
+      @include desktop {
+        margin-right: 42px/$desktop-width * 100%;
+      }
+    }
+  }
+  &__image {
+
+  }
+  &__list {
+    margin-top: 40px;
+    font-size: 0;
+    margin-bottom: 20px;
+    @include tablet-portrait {
+      margin-bottom: 0;
+    };
+  }
+  &__list-item {
+    position: relative;
+    display: inline-block;
+    width: calc(50% - 17px);
+    margin-left: 17px;
+    font-size: $font-size--sm;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 7px;
+    text-align: left;
+    vertical-align: top;
+    height: 30px;
+    @include tablet-portrait {
+      font-size: $font-size--sm;
+      width: calc(48% - 17px);
+      line-height: 30px;
+      font-size: $font-size;
+      margin-bottom: 0;
+      height: auto;
+      line-height: 1.3;
+      margin-top: 17px;
+      margin-right: 1%;
+    };
+    &:hover {
+      color: lighten(black, 30%);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 12%;
+      left: 0;
+      margin-top: 0px;
+      margin-left: -12px;
+      width: 5px;
+      height: 5px;
+      background-color: red;
+      @include tablet-portrait {
+        top: 50%;
+        margin-left: -17px;
+        margin-top: -2.5px;
+      };
+    }
+  }
+  &__descr {
+    font-size: $font-size--md;
+    color: #626262;
+    @include tablet-portrait {
+      padding-top: 0;
+      margin-top: 0;
+    };
+  }
+  &__btn {
+    align-self: flex-end;
+    background-color: transparent;
+    border: 1px solid #9e9e9e;
+    color: #191919;
+    text-transform: uppercase;
+    padding: 11px 20px/$desktop-width * 100%;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-align: center;
+    &:hover {
+      background-color: lighten(black, 90%);
+    }
+    @include tablet-portrait {
+      width: auto;
+      padding: 11px 40px/$tablet-width * 100%;
+    };
+    @include desktop {
+      padding: 11px 50px/$desktop-width * 100%;
+    };
+  }
+}

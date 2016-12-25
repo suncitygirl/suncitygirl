@@ -1,0 +1,44 @@
+.main-nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 9px 0 3px;
+    font-size: 0;
+    text-transform: uppercase;
+    &__list {
+        display: block;
+        width: 100%;
+    }
+    &__item {
+        position: relative;
+        display: inline-block;
+        width: 50%;
+        font-size: $font-size--md;
+        text-align: center;
+    }
+    &__link--text {
+        @include tablet-portrait {
+            &:hover {
+                border-bottom: solid red 1px;
+                font-weight: bold;
+            }
+            &:active {
+                font-weight: normal;
+                color: lighten(#000, 55%);
+            }
+        };
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 120%;
+        height: 1px;
+        margin-left: -10%;
+        background-color: $black;
+        @include tablet-portrait {
+            display: none;
+        };
+    }
+}
